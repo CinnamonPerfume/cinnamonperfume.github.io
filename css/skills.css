@@ -1,0 +1,109 @@
+/* ── skills.css — Skills & program categories ── */
+
+.skills-categories { display: flex; flex-direction: column; gap: var(--sp-5); }
+
+.skill-category {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  overflow: hidden;
+  transition: border-color var(--t-base) var(--ease);
+}
+.skill-category:hover { border-color: var(--border-hi); }
+
+.skill-cat-header {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  padding: var(--sp-4) var(--sp-5);
+  border-bottom: 1px solid var(--border);
+}
+.skill-cat-icon {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.skill-cat-name {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  font-weight: 500;
+}
+.skill-cat-count {
+  margin-left: auto;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-mute);
+}
+
+.skill-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: var(--sp-4) var(--sp-5);
+}
+
+.skill-chip {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 12px;
+  border-radius: var(--r-sm);
+  border: 1px solid var(--border-hi);
+  background: var(--elevated);
+  transition: border-color var(--t-base) var(--ease),
+              background var(--t-base) var(--ease);
+  cursor: default;
+}
+.skill-chip:hover {
+  border-color: var(--accent-mid);
+  background: var(--hover);
+}
+.skill-chip:hover .skill-dot { box-shadow: 0 0 0 3px var(--accent-lo); }
+
+.skill-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  transition: box-shadow var(--t-base) var(--ease);
+}
+.skill-dot--accent      { background: var(--accent); }
+.skill-dot--vermillion  { background: #60a5fa; }
+.skill-dot--dim         { background: var(--border-hi); }
+.skill-dot--mute        { background: var(--text-mute); }
+
+.skill-name {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+
+.skill-level {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 1px 5px;
+  border-radius: var(--r-sm);
+  margin-left: 2px;
+}
+.skill-level--main {
+  background: var(--accent-mid);
+  color: var(--accent);
+  border: 1px solid var(--accent-mid);
+}
+.skill-level--sec {
+  background: #60a5fa14;
+  color: #60a5fa;
+  border: 1px solid #60a5fa28;
+}
+.skill-level--base {
+  background: transparent;
+  color: var(--text-mute);
+  border: 1px solid var(--border-hi);
+}

@@ -1,0 +1,59 @@
+/* ── tokens.css — Design System Variables ── */
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Datatype:wght@100..900&display=swap');
+
+:root {
+  /* Backgrounds */
+  --bg:        #080c10;
+  --surface:   #0d1117;
+  --elevated:  #131920;
+  --hover:     #1a2230;
+
+  /* Borders */
+  --border:    #1c2a3a;
+  --border-hi: #243447;
+
+  /* Text */
+  --text:      #f0f6fc;
+  --text-dim:  #7d9ab5;
+  --text-mute: #555c63;
+
+  /* Cyan / Blue accent */
+  --cyan:      #38bdf8;
+  --cyan-lo:   #38bdf81a;
+  --cyan-mid:  #38bdf833;
+
+  --blue:      #0ea5e9;
+  --blue-lo:   #0ea5e91a;
+  --blue-mid:  #0ea5e933;
+
+  /* Active accent */
+  --accent:    var(--cyan);
+  --accent-lo: var(--cyan-lo);
+  --accent-mid:var(--cyan-mid);
+
+  /* Tag color — slightly warmer blue */
+  --tag-color:  #60a5fa;
+  --tag-bg:     #60a5fa14;
+  --tag-border: #60a5fa28;
+
+  /* Gradient */
+  --grad-text: linear-gradient(135deg, #f0f6fc 0%, #38bdf8 60%, #0ea5e9 100%);
+
+  /* Typography */
+  --font-sans: 'Lexend', 'Space Grotesk', sans-serif;
+  --font-mono: 'Datatype', 'JetBrains Mono', monospace;
+
+  /* Spacing */
+  --sp-1:  4px;  --sp-2:  8px;  --sp-3:  12px; --sp-4:  16px;
+  --sp-5:  20px; --sp-6:  24px; --sp-8:  32px;  --sp-10: 40px;
+  --sp-12: 48px; --sp-16: 64px; --sp-20: 80px;
+
+  /* Radii */
+  --r-sm: 4px; --r-md: 8px; --r-lg: 12px; --r-xl: 16px; --r-pill: 999px;
+
+  /* Transitions */
+  --ease:   cubic-bezier(0.4, 0, 0.2, 1);
+  --t-fast: 150ms; --t-base: 200ms; --t-slow: 300ms; --t-folder: 260ms;
+}

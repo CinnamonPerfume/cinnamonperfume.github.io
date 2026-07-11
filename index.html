@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deniz Çetin — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/skills.css">
+  <link rel="stylesheet" href="css/marquee.css">
+  <link rel="stylesheet" href="css/lightbox.css">
+  <link rel="stylesheet" href="css/cursor.css">
+</head>
+<body>
+
+  <!-- ── Header ── -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <div class="identity">
+          <h1 class="name">Deniz <span class="grad-text">Çetin</span><span class="cursor"></span></h1>
+          <p class="role">Electrical Engineering and Computer Science · ČVUT FEL · Prague</p>
+        </div>
+        <nav class="header-links">
+          <a class="pill-link" href="https://github.com/CinnamonPerfume" target="_blank">GitHub</a>
+          <a class="pill-link" href="mailto:deniz.sayin.cetin@outlook.com">Email</a>
+          <a class="pill-link" href="#">Resume</a>
+        </nav>
+      </div>
+
+      <p class="bio">
+        <strong>EECS</strong> student at <strong>Czech Technical University in Prague</strong>, building 
+        personal tools aimed towards data preservation, classification, and tracking.
+        I gravitate toward <strong>Electron + React</strong> for offline-first desktop apps and
+        <strong>C / Python</strong> for low-level work, scripting and scraping — mostly whatever makes a problem
+        satisfying and easy to solve.
+      </p>
+    </div>
+  </header>
+
+  <!-- ── Marquee ── -->
+  <div class="marquee-strip">
+    <div class="marquee-track" id="marquee-track">
+      <!-- items injected by marquee.js -->
+    </div>
+  </div>
+
+  <main>
+    <div class="container">
+
+      <!-- ── Projects ── -->
+      <section class="section" id="projects">
+        <div class="section-label">Projects //</div>
+
+        <div class="folders" id="folders-list">
+          <!-- injected by projects.js -->
+        </div>
+      </section>
+
+      <!-- ── Coursework ── -->
+      <section class="section" id="coursework">
+        <div class="section-label">Coursework //</div>
+        <div class="folders" id="coursework-list"></div>
+      </section>
+
+      <!-- ── Experience ── -->
+      <section class="section" id="experience">
+        <div class="section-label">Experience //</div>
+        <div class="folders" id="experience-list"></div>
+      </section>
+
+      <!-- ── Languages ── -->
+      <section class="section" id="languages">
+        <div class="section-label">Languages //</div>
+        <div class="folders" id="languages-list"></div>
+      </section>
+
+      <!-- ── Skills ── -->
+      <section class="section" id="skills">
+        <div class="section-label">Skills &amp; Stack //</div>
+
+        <div class="skills-categories" id="skills-categories">
+          <!-- injected by skills.js -->
+        </div>
+      </section>
+
+    </div>
+    <img src="../assets/CVUT Logo.png" alt="ČVUT Logo" class="bg-logo">
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="footer-note">© <span id="year"></span> Deniz Çetin</span>
+      <span class="footer-note">Deniz Çetin — <span class="accentglow">open to opportunities</span></span>
+    </div>
+  </footer>
+
+  <script src="js/cursor.js"></script>
+  <script src="js/lightbox.js"></script>
+  <script src="js/marquee.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/extras.js"></script>
+  <script src="js/skills.js"></script>
+
+</body>
+</html>
