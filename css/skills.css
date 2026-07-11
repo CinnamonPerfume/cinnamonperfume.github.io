@@ -78,7 +78,7 @@
 
 .skill-name {
   font-family: var(--font-mono);
-  font-size: 12px;
+  font-size: 14px;
   color: var(--text-dim);
   white-space: nowrap;
 }
