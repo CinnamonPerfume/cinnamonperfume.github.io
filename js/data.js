@@ -291,6 +291,7 @@ const SKILLS = [
       { name: 'Python',      level: 'main' },
       { name: 'Data Structures', level: 'main' },
       { name: 'Bash / CLI',  level: 'sec' },
+      { name: 'Artificial Intelligence', level: 'main' },
     ]
   },
   {
