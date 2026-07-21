@@ -322,3 +322,37 @@ const SKILLS = [
     ]
   },
 ];
+
+const CERTIFICATES = [
+  { id: 'cert-ml', name: 'Google AI Essentials', date: 'Jul 2026' },
+];
+
+function renderCertificates() {
+  const container = document.getElementById('certificates-list');
+  if (!container) return;
+  container.innerHTML = '';
+  CERTIFICATES.forEach(cert => {
+    const el = document.createElement('div');
+    el.className = 'folder fade-up folder-cert';
+    el.dataset.id = cert.id;
+
+    const paperIcon = `
+      <svg viewBox="0 0 32 28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path class="icon-body" d="M4 4V20C4 21.1046 4.89543 22 6 22L18 22C19.1046 22 20 21.1046 20 20V8.34162C20 7.8034 19.7831 7.28789 19.3982 6.91161L14.9579 2.56999C14.5842 2.20459 14.0824 2 13.5597 2L6 2C4.89543 2 4 2.89543 4 4Z"/>
+        <path class="icon-body" d="M14 2V6C14 7.10457 14.8954 8 16 8H20"/>
+      </svg>`;
+
+    el.innerHTML = `
+      <div class="folder-header">
+        <div class="folder-icon">${paperIcon}</div>
+        <div class="folder-meta">
+          <span class="folder-name">${cert.name}</span>
+        </div>
+        <span class="folder-category">${cert.date}</span>
+      </div>`;
+
+    container.appendChild(el);
+  });
+}
+
+renderCertificates();
